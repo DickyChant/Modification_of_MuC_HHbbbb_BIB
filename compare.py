@@ -22,7 +22,7 @@ def compare_file(file1,file2,outfile = "diff.html"):
 
 
 if __name__ == "__main__":
-    argvs = str(sys.argv)
-    f1 = argvs[1]
-    f2 = argvs[2]
+    f1 = sys.argv[1]
+    f2 = sys.argv[2]
+    print(f1,f2)
     compare_file(f1,f2)
